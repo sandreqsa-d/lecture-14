@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Hanken+Grotesk:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header>a {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-weight: 600;
+    align-items: center;
+}
+
+header ul li a {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    text-decoration: none;
+}
+
+header ul li {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header button {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.11px;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+
+
+.firstPic {
+    background-image: url("/pictures/didi_fortoxali.png");
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+}

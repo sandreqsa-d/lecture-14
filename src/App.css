@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 40px;
+    padding-inline: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Barlow', serif;
+}
+
+.logo {
+    font-family: "Barlow", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav ul li button {
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+nav ul li button:hover {
+    background: rgba(255, 255, 255, 0.322);
+    color: white;
+}
+
+/* HERO */
+.hero {
+    background: url("./pictures/didi_fotroxali.png");
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 48px;
+    letter-spacing: 5px;
+}
+
+.arrow {
+    margin-top: 40px;
+}
+
+
+
+/* meoreDiv + mesameDiv seqciebi */
+
+.meoreDiv,
+.mesameDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.meoreDiv img,
+.mesameDiv img {
+    width: 50%;
+    height: auto;
+}
+
+.meoreDiv .text,
+.mesameDiv .text {
+    width: 50%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.text a {
+    text-decoration: none;
+    font-family: 'Fraunces';
+    color: black;
+    font-weight: 700;
+    border-bottom: 3px solid yellow;
+    width: fit-content;
+}
+
+.meotxeDiv {
+    display: flex;
+}
+
+.baliDiv {
+    background-image: url("./pictures/bali.png");
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    width: 50%;
+    height: 720px;
+    color: hsl(166, 30%, 35%);
+    font-family: "Fraunces", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 59px;
+    max-height: 600px;
+}
+
+.baliDiv p,
+.mandariniDiv p {
+    font-family: "Barlow", sans-serif;
+    position: static;
+    margin-top: 10px;
+}
+
+.baliDiv p,
+.mandariniDiv p {
+    width: 339px;
+    align-items: center;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: -0.11px;
+    text-align: center;
+
+}
+
+.baliDiv h2,
+.mandariniDiv h2 {
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.mandariniDiv {
+    background-image: url("./pictures/mandarini.jpg");
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    width: 50%;
+    height: 720px;
+    color: hsl(166, 30%, 35%);
+    font-family: "Fraunces", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    max-height: 600px;
+    padding-bottom: 59px;
+
+}
+
+.testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'barlow', sans-serif;
+}
+
+.testimonials-title {
+    font-family: "Fraunces", sans-serif;
+    margin-bottom: 81px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #A7AAAD;
+
+}
+
+.testimonial {
+    display: inline-block;
+    width: 30%;
+    margin-right: 20px;
+}
+
+.testimonial-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #5B636D;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: -0.13px;
+    text-align: center;
+
+}
+
+.testimonial-name {
+    font-weight: 700;
+    margin-top: 69px;
+    margin-bottom: 5px;
+}
+
+.testimonial-role {
+    font-weight: 400;
+    color: #b0b5b9;
+    font-size: 14px;
+}
+
+.qvedaFotoebi {
+    background-image: url("/pictures/bolofoto.png");
+    width: 100%;
+    height: 447px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #90D4C6;
+    height: 350px;
+
+}
+
+.asdf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 297px;
+    margin: auto;
+    padding-top: 72px;
+}
+
+.asdf h2 {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Barlow", sans-serif;
+
+}
+
+.Soc_link,
+.asdf,
+.links a {
+    color: #2C7566;
+
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 88px;
+    width: 100%;
+}
+
+.Soc_link {
+    font-size: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 164px;
+}
+
+.links a:hover,
+.Soc_link:hover {
+    color: white;
+}
