@@ -8,7 +8,10 @@ import wiqa from "./images/wiqa.png"
 import gogoni from "./images/gogoni.png"
 import zangi from "./images/zangi.png"
 import zgvaze from "./images/zgvaze_myofi.png"
-
+import rdze from "./images/rdze.jpg"
+import fortoxali from "./images/fortoxali_dawrili.jpg"
+import nayini from "./images/nayini.jpg"
+import marsh from "./images/marshmeloebi.jpg"
 function App() {
 
   const icons = [
@@ -31,7 +34,10 @@ function App() {
   ]
   return (
     <>
-      <header>
+     
+
+      <section className="hero">
+         <header>
         <h2 className="logo">sunnyside</h2>
         <nav>
           <ul>
@@ -42,10 +48,8 @@ function App() {
           </ul>
         </nav>
       </header>
-
-      <section className="hero">
         <h1>WE ARE CREATIVES</h1>
-                <img src={arrow} alt="arrow" className="arrow" />
+        <img src={arrow} alt="arrow" className="arrow" />
       </section>
 
       <section className="meoreDiv">
@@ -113,7 +117,12 @@ function App() {
           <p className="testimonial-role">Business Owner</p>
         </section>
       </div>
-      <section className="qvedaFotoebi"></section>
+      <section className="qvedaFotoebi">
+        <img src={rdze} alt="" />
+        <img src={fortoxali} alt="" />
+        <img src={nayini} alt="" />
+        <img src={marsh} alt="" />
+      </section>
 
 
       <footer>
