@@ -39,7 +39,7 @@ function App() {
 
       <section className="hero">
         <h1>WE ARE CREATIVES</h1>
-        <img src="./public/pictures/group.png" alt="arrow" className="arrow" />
+        <img src="./pictures/group.png" alt="arrow" className="arrow" />
       </section>
 
       <section className="meoreDiv">
@@ -52,12 +52,12 @@ function App() {
           </p>
           <a href="">LEARN MORE</a>
         </div>
-        <img src="./public/pictures/kvercxi.jpg" alt="egg" />
+        <img src="./pictures/kvercxi.jpg" alt="egg" />
       </section>
 
 
       <section className="mesameDiv">
-        <img src="./public/pictures/wiqa.png" alt="glass" />
+        <img src="./pictures/wiqa.png" alt="glass" />
         <div className="text">
           <h2>Stand out to the right audience</h2>
           <p>
