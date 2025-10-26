@@ -2,6 +2,12 @@ import React from "react";
 import "./App.css";
 import { BiLogoFacebookSquare } from "react-icons/bi";
 import { FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa";
+import arrow from "./images/Group.png"
+import kvercxi from "./images/kvercxi.jpg"
+import wiqa from "./images/wiqa.png"
+import gogoni from "./images/gogoni.png"
+import zangi from "./images/zangi.png"
+import zgvaze from "./images/zgvaze_myofi.png"
 
 function App() {
 
@@ -39,7 +45,7 @@ function App() {
 
       <section className="hero">
         <h1>WE ARE CREATIVES</h1>
-        <img src="./pictures/group.png" alt="arrow" className="arrow" />
+                <img src={arrow} alt="arrow" className="arrow" />
       </section>
 
       <section className="meoreDiv">
@@ -52,12 +58,12 @@ function App() {
           </p>
           <a href="">LEARN MORE</a>
         </div>
-        <img src="./pictures/kvercxi.jpg" alt="egg" />
+        <img src={kvercxi} alt="egg" />
       </section>
 
 
       <section className="mesameDiv">
-        <img src="./pictures/wiqa.png" alt="glass" />
+        <img src={wiqa} alt="glass" />
         <div className="text">
           <h2>Stand out to the right audience</h2>
           <p>
@@ -82,7 +88,7 @@ function App() {
         <h2 className="testimonials-title">CLIENT TESTIMONIALS</h2>
 
         <section className="testimonial">
-          <img src="./pictures/gogoni.png" alt="Emily" className="testimonial-img" />
+          <img src={gogoni} alt="Emily" className="testimonial-img" />
           <p className="testimonial-text">
             We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
           </p>
@@ -91,7 +97,7 @@ function App() {
         </section>
 
         <section className="testimonial">
-          <img src="./pictures/zangi.png" alt="Thomas" className="testimonial-img" />
+          <img src={zangi} alt="Thomas" className="testimonial-img" />
           <p className="testimonial-text">
             Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
           </p>
@@ -100,7 +106,7 @@ function App() {
         </section>
 
         <section className="testimonial">
-          <img src="./pictures/zgvaze_myofi.png" alt="Jennie" className="testimonial-img" />
+          <img src={zgvaze} alt="Jennie" className="testimonial-img" />
           <p className="testimonial-text">
             Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!        </p>
           <h3 className="testimonial-name">Jennie F.</h3>
