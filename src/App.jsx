@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import { BiLogoFacebookSquare } from "react-icons/bi";
 import { FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa";
@@ -12,7 +11,10 @@ import rdze from "./images/rdze.jpg"
 import fortoxali from "./images/fortoxali_dawrili.jpg"
 import nayini from "./images/nayini.jpg"
 import marsh from "./images/marshmeloebi.jpg"
+import React, { useState } from "react";
+
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const icons = [
     {
@@ -34,20 +36,31 @@ function App() {
   ]
   return (
     <>
-     
+
 
       <section className="hero">
-         <header>
-        <h2 className="logo">sunnyside</h2>
-        <nav>
-          <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Projects</a></li>
-            <li><button>CONTACT</button></li>
-          </ul>
-        </nav>
-      </header>
+        <header>
+          <div className="logo">sunnyside</div>
+
+          <div
+            className="burger"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <nav>
+            <ul className={menuOpen ? "active" : ""}>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Projects</a></li>
+              <li><button>Contact</button></li>
+            </ul>
+          </nav>
+        </header>
+
         <h1>WE ARE CREATIVES</h1>
         <img src={arrow} alt="arrow" className="arrow" />
       </section>
@@ -134,8 +147,8 @@ function App() {
             <li><a href="">Projectss</a></li>
           </ul>
           <ul className="icons">
-            {icons.map((icon) => (
-              <li>
+            {icons.map((icon, index) => (
+              <li key={index}>
                 <a href={icon.link} target="_blank" className="Soc_link">{icon.icon}</a>
               </li>
             ))}
